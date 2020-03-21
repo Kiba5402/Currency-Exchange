@@ -3,6 +3,8 @@ import express from 'express';
 import morgan from 'morgan';
 import router from './router/router';
 
+//hola cristian
+
 //constantes
 const app = express();
 
@@ -24,5 +26,10 @@ app.use(router);
 
 //listen 
 app.listen(app.get('port'), () => {
+<<<<<<< HEAD
     console.log('rama TEST', app.get('port'));
 });
+=======
+    console.log('servidor escuchando en el puerto', app.get('port'));
+});
+>>>>>>> 8022bc16e4b803df9d955d2887caab76440f0b67
