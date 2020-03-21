@@ -3,13 +3,11 @@ import express from 'express';
 import morgan from 'morgan';
 import router from './router/router';
 
-//jajajaja
-
 //constantes
 const app = express();
 
 //settings 
-app.set('port', process.env.PORT || 3100);
+app.set('port', process.env.PORT || 3000);
 
 //CORS
 app.use((req, res, next) => {
