@@ -40,7 +40,6 @@ class API1Convert {
                 let resp = yield this.connectAPI(URL, query);
                 if (resp != 1) {
                     const { result } = JSON.parse(resp);
-                    console.log(result);
                     return jsonFormater_1.jsonUtils.creaResp(true, 1, new currency_model_1.currency(codBase, cant, [
                         new currency_model_1.currency(codTarget, (result.value * cant)),
                         result.updated

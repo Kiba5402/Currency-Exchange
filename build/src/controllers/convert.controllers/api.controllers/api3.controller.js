@@ -34,16 +34,17 @@ class API3Convert {
     getConvert(codBase, codTarget, cant) {
         return __awaiter(this, void 0, void 0, function* () {
             let URL = this.API.urlBase;
-            let query = `${this.API.key}/latest/${codBase}`;
+            let query = `convert?q=${codBase}_${codTarget}&apiKey=${this.API.key}`;
             //intentamos enviar la respuesta dle servidor
             try {
                 let resp = yield this.connectAPI(URL, query);
                 if (resp != 1) {
-                    const { conversion_rates, time_last_update } = JSON.parse(resp);
-                    const value = conversion_rates[codTarget];
+                    const { results } = JSON.parse(resp);
+                    const respF = results[`${codBase}_${codTarget}`];
+                    const fecha = respF.lastModDt;
                     return jsonFormater_1.jsonUtils.creaResp(true, 1, new currency_model_1.currency(codBase, cant, [
-                        new currency_model_1.currency(codTarget, (value * cant), undefined),
-                        this.formatDate(time_last_update)
+                        new currency_model_1.currency(codTarget, (respF.val * cant), undefined),
+                        fecha.substring(0, fecha.length - 5)
                     ]).toJson());
                 }
                 else {
@@ -59,7 +60,6 @@ class API3Convert {
     //traemos todas las monedas siponibles en la API
     getAllCurrencys() {
         return __awaiter(this, void 0, void 0, function* () {
-            //https://free.currconv.com/api/v8/currencies?apiKey=106cf3cf948c7917023b
             let URL = this.API.urlBase;
             let query = `currencies?apiKey=${this.API.key}`;
             //invocamos la API 
@@ -67,7 +67,6 @@ class API3Convert {
                 let resp = yield this.connectAPI(URL, query);
                 if (resp != 1) {
                     const { results } = JSON.parse(resp);
-                    console.debug(this.formatListC(results));
                     return jsonFormater_1.jsonUtils.creaResp(true, 0, this.formatListC(results));
                 }
                 else {
@@ -108,18 +107,6 @@ class API3Convert {
             respF.push(new currencyList_model_1.currencyList(x).toJson());
         }
         return respF;
-    }
-    //funcion para formatear la fecha de actualizacion 
-    formatDate(unixT) {
-        let dt = new Date(unixT * 1000);
-        let day = dt.getDay();
-        let mth = dt.getMonth();
-        let year = dt.getFullYear();
-        let hr = dt.getHours();
-        let m = dt.getMinutes();
-        let s = dt.getSeconds();
-        const z = (num) => { return (num < 10) ? "0" + num : num; };
-        return `${year}-${z(mth)}-${z(day)}T${z(hr)}:${z(m)}:${z(s)}`;
     }
 }
 exports.API3Convert = API3Convert;

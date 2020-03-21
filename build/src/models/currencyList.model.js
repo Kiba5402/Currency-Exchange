@@ -9,7 +9,7 @@ class currencyList {
     }
     //getters
     getName() {
-        return (this.name == undefined) ? '----------FALTA--------!!!!' : this.name;
+        return (this.name == undefined) ? 'No Disp.' : this.name;
     }
     getCode() {
         return this.code;
