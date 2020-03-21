@@ -9,7 +9,7 @@ import router from './router/router';
 const app = express();
 
 //settings 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3100);
 
 //CORS
 app.use((req, res, next) => {
