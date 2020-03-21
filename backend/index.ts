@@ -3,6 +3,8 @@ import express from 'express';
 import morgan from 'morgan';
 import router from './router/router';
 
+//hola cristian
+
 //constantes
 const app = express();
 
