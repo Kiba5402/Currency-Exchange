@@ -1,0 +1,25 @@
+{
+    "APIs": [
+        {
+            "name": "Cambio.Today",
+            "urlBase": "https://api.cambio.today/v1/",
+            "docs": "http://cambio.today/api",
+            "key": "4111|VoUZthqOuBaOWP3TuqQQe8VCyEVF5Pt4",
+            "Activo": true
+        },
+        {
+            "name": "ExchangeRate-API",
+            "urlBase": "https://prime.exchangerate-api.com/v5/",
+            "docs": "https://www.exchangerate-api.com/docs/overview",
+            "key": "708d8f6db9d09ea5ea7e5e19",
+            "Activo": true
+        },
+        {
+            "name": "Currency-converter-api",
+            "urlBase": "https://free.currconv.com/api/v8/",
+            "docs": "https://www.currencyconverterapi.com/docs",
+            "key": "106cf3cf948c7917023b",
+            "Activo": true
+        }
+    ]
+}
