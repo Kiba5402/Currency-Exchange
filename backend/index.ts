@@ -8,6 +8,7 @@ const app = express();
 
 //settings 
 app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'ejs');
 
 //CORS
 app.use((req, res, next) => {
