@@ -2,6 +2,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import router from './router/router';
+import path from 'path';
 
 //constantes
 const app = express();
@@ -9,6 +10,8 @@ const app = express();
 //settings 
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
+console.log(path.join(__dirname, '/'));
+app.set('views', 'public/views');
 
 //CORS
 app.use((req, res, next) => {

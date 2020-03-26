@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <img src="../assets/images/simbolo.png" alt="Money">
+                <span class="brand">
+                    <strong>Currency</strong>
+                    Exchange
+                </span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="">Información</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="slider"></div>
+    <article>
+        <div class="center">
+            <div class="resultados">
+                <div class="title">Conversion</div>
+            </div>
+            <div class="controles">
+                <div class="title">Monedas Disponibles</div>
+                <div class="controlesContent">
+                    <div class="grupo">
+                        <label for="API" class="labelC">Servidor</label>
+                        <select name="servicio" id="API" class="selectC" disabled>
+                            <option value="-1">Seleccione un servidor</option>
+                        </select>
+                    </div>
+                    <hr class="hr">
+                    <div class="grupo espacio">
+                        <label for="De" class="labelC">Base</label>
+                        <select name="De" id="API" class="selectC" disabled>
+                            <option value="-1">Seleccione una divisa</option>
+                        </select>
+                    </div>
+                    <div class="grupo espacio">
+                        <label for="De" class="labelC">Cambio a</label>
+                        <select name="De" id="API" class="selectC" disabled>
+                            <option value="-1">Seleccione una divisa</option>
+                        </select>
+                    </div>
+                    <div class="grupo espacio">
+                        <label for="De" class="labelC">Cantidad</label>
+                        <input type="text" class="inputC" placeholder="0" disabled>
+                    </div>
+                    <div class="grupo espacio">
+                        <button class="btn">Convertir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+    <footer>
+        <div class="center">
+            <p> &copy; Currency Exchange CR 2020.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

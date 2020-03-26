@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    height: 7em;
+    border-top: 5px #336699 solid;
+    /*     background-color: blue; */
+}
+
+.center {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    width: 65%;
+    float: left;
+    margin-top: 1.2em;
+}
+
+.logo img {
+    width: 4.5em;
+    float: left;
+    display: block;
+}
+
+.logo span {
+    font-size: 2.3em;
+    float: left;
+    display: block;
+    margin: 0.28em 0em 0em 0.1em;
+}
+
+.menu {
+    width: 35%;
+    float: left;
+    text-align: right;
+    margin-top: 2em;
+}
+
+article {
+    display: flex;
+    height: 79vh;
+}
+
+.resultados {
+    margin: auto;
+    width: 58%;
+    float: left;
+    height: 40em;
+    background-color: #f7f7f7;
+    margin-right: 2%;
+    border-radius: 7px;
+}
+
+.controles {
+    margin: auto;
+    width: 40%;
+    float: left;
+    height: 40em;
+    background-color: #f7f7f7;
+    border-radius: 7px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px #eee solid;
+    padding: 0.3em 0em 0.3em 0em;
+    color: #707070;
+    margin-bottom: 1.5em;
+}
+
+footer {
+    height: 2.7em;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+footer p {
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0em 1em 0em 0em;
+    font-size: 1.2em;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.menu ul li a:hover {
+    transition: 300ms;
+    color: #336699;
+}
+
+.slider {
+    background-color: #336699;
+    height: 2em;
+}
+
+.controlesContent {
+    text-align: center;
+}
+
+.grupo {
+    text-align: center;
+    margin-top: 1.6em;
+}
+
+.labelC {
+    width: 4.5em;
+    margin-right: 2em;
+    font-size: 1.4em;
+    color: #707070;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.selectC {
+    font-size: 1.02em;
+    width: 20em;
+    height: 2.2em;
+    border-color: #ccc;
+    color: #929292;
+    border-radius: 4px;
+}
+
+.selectC ::selection {
+    border-color: gray;
+}
+
+.hr {
+    width: 85%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 0.5px solid #cacaca;
+}
+
+.espacio {
+    margin-top: 3.5em;
+}
+
+.inputC {
+    font-size: 1.2em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    width: 16.5em;
+    height: 1.4em;
+    color: #929292;
+    border-radius: 4px;
+    box-shadow: none;
+    border-style: none;
+    border: 1px #ccc solid;
+    text-align: right;
+}
+
+.btn {
+    width: 10em;
+    height: 2.7em;
+    background-color: #336699;
+    border: none;
+    box-shadow: none;
+    color: white;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 300ms;
+    background-color: #004080;
+}

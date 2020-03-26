@@ -4,7 +4,7 @@ import { API2Convert } from './api.controllers/api2.controller';
 import { API3Convert } from './api.controllers/api3.controller';
 import { jsonUtils } from '../../lib/helpers/jsonFormater';
 import { Request, Response } from 'express';
-
+ 
 class convertControllerG {
 
     //funcion que devuelve un listado con todas las monedas disponibles
