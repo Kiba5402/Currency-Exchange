@@ -4,17 +4,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 //imports 
 const express_1 = __importDefault(require("express"));
+const views_controller_1 = __importDefault(require("../controllers/views.controllers/views.controller"));
 const api_global_controller_1 = __importDefault(require("../controllers/api.controllers/api.global.controller"));
 //constante
 const router = express_1.default.Router();
 //ruta inicial que pinta el home
-router.get('/', (req, res) => {
-    res.render('index.ejs');
-});
+router.get('/', views_controller_1.default.getHome);
+//ruta inicial que pinta el inicio
+router.post('/inicio', views_controller_1.default.getConvert);
+//ruta que devuleve la vista de informacion
+router.post('/informacion', views_controller_1.default.getinfo);
 //ruta que trae loa lista de APIs disponibles
-router.get('/API_List', api_global_controller_1.default.getAPIList);
+router.post('/API_List', api_global_controller_1.default.getAPIList);
 //ruta para enlistar las divisas disponibles
-router.get('/list/:numAPI', api_global_controller_1.default.getCurrencyList);
+router.post('/list/:numAPI', api_global_controller_1.default.getCurrencyList);
 //ruta para realizar la conversion
-router.get('/convert/:numAPI/:base/:trg/:qty', api_global_controller_1.default.getConvert);
+router.post('/convert/:numAPI/:base/:trg/:qty', api_global_controller_1.default.getConvert);
 module.exports = router;

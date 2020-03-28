@@ -7,7 +7,9 @@ exports.jsonUtils = {
         "Se presento un error en la peticio HTTP",
         "La respuesta de la API no fue la esperada (json), revise la consola",
         "API no seteada, puede que no exista",
-        "No hay APIs disponibles" //cod5
+        "No hay APIs disponibles",
+        "Envio de vista correcta",
+        "No se encontro la vista" //cod7
     ],
     creaResp: (flag, codMsg, data) => {
         return {

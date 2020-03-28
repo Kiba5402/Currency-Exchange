@@ -48,7 +48,7 @@ class convertControllerG {
         });
     }
     //funcion que nos trae un listado de las API disponibles
-    getAPIList(req, res) {
+    getAPIList() {
         const { APIs } = require('./config/list.api.json');
         let lista = [];
         let num;
@@ -62,10 +62,10 @@ class convertControllerG {
         }
         //enviamos la respuesta
         if (lista.length !== 0) {
-            res.json(jsonFormater_1.jsonUtils.creaResp(true, 0, lista));
+            return jsonFormater_1.jsonUtils.creaResp(true, 0, lista);
         }
         else {
-            res.json(jsonFormater_1.jsonUtils.creaResp(true, 5, undefined));
+            return jsonFormater_1.jsonUtils.creaResp(true, 5, undefined);
         }
     }
     //funcion que nos devuelve la clase de conexion a la API
