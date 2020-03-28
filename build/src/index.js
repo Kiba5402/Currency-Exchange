@@ -11,6 +11,9 @@ const router_1 = __importDefault(require("./router/router"));
 const app = express_1.default();
 //settings 
 app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'ejs');
+app.set('views', 'public/views');
+app.use(express_1.default.static('public'));
 //CORS
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');

@@ -6,7 +6,16 @@ body {
 header {
     height: 7em;
     border-top: 5px #336699 solid;
-    /*     background-color: blue; */
+}
+
+#carga {
+    display: flex;
+    width: 100%;
+}
+
+#carga img {
+    margin: auto;
+    width: 5em;
 }
 
 .center {
@@ -38,6 +47,10 @@ header {
     float: left;
     text-align: right;
     margin-top: 2em;
+}
+
+.menu2 {
+    display: none;
 }
 
 article {
@@ -178,4 +191,59 @@ footer p {
 .btn:hover {
     transition: 300ms;
     background-color: #004080;
+}
+
+.resultado {
+    height: 48vh;
+    display: flex;
+}
+
+.resultado span {
+    margin: auto;
+    font-size: 5.2em;
+}
+
+.actualizacion {
+    text-align: center;
+    margin-top: 4em;
+    color: #707070;
+}
+
+.contenido {
+    animation: fadeIn linear 300ms;
+}
+
+.hideContent {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.load {
+    width: 1.4em;
+    position: absolute;
+    margin: 0.4em 0em 0em 0.5em;
+    display: none;
+}
+
+.disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.disabled:hover{
+    background-color: gray;
+    cursor: not-allowed;
 }

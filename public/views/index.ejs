@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
+
 <body>
-    <p>rueba</p>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <img src="./assets/images/simbolo.png" alt="Money">
+                <span class="brand">
+                    <strong>Currency</strong>
+                    Exchange
+                </span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a id="ini" view="inicio" class="link">Inicio</a>
+                    </li>
+                    <li>
+                        <a view="informacion" class="link">Información</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu2">
+                <img src="./assets/images/dropDown.png" id="imgDrop">
+                <div class="drop" id="drop" active="0">
+                    <div>
+                        <a view="inicio" class="link">Inicio</a>
+                    </div>
+                    <hr class="dropHR">
+                    <div>
+                        <a view="informacion" class="link">Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="clear: both;"></div>
+    <div class="slider"></div>
+    <div style="clear: both;"></div>
+    <article id="article"></article>
+    <div style="clear: both;"></div>
+    <footer>
+        <div class="center">
+            <p> &copy; Currency Exchange CR 2020.</p>
+        </div>
+    </footer>
 </body>
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<script src="/assets/js/dropDown.js" type="text/javaScript"></script>
+
 </html>

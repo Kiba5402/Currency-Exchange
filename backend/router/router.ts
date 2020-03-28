@@ -1,19 +1,28 @@
 //imports 
-import express, { Router } from 'express';
-import convertControllerG from '../controllers/convert.controllers/api.global.controller';
-import {Request, Response} from 'express';
+import express, { Router, Request, Response } from 'express';
+import viewsController from '../controllers/views.controllers/views.controller';
+import convertControllerG from '../controllers/api.controllers/api.global.controller';
 
 //constante
 const router: Router = express.Router();
 
-router.get('/', (req : Request, res : Response) => {
-    res.render('index.ejs');
-});
+//ruta inicial que pinta el home
+router.get('/', viewsController.getHome);
 
+//ruta inicial que pinta el inicio
+router.post('/inicio', viewsController.getConvert);
 
-router.get('/list/:numAPI', convertControllerG.getCurrencyList);
+//ruta que devuleve la vista de informacion
+router.post('/informacion', viewsController.getinfo);
 
-router.get('/convert/:numAPI/:base/:trg/:qty', convertControllerG.getConvert);
+//ruta que trae loa lista de APIs disponibles
+router.post('/API_List', convertControllerG.getAPIList);
+
+//ruta para enlistar las divisas disponibles
+router.post('/list/:numAPI', convertControllerG.getCurrencyList);
+
+//ruta para realizar la conversion
+router.post('/convert/:numAPI/:base/:trg/:qty', convertControllerG.getConvert);
 
 //exportamos
 export = router;

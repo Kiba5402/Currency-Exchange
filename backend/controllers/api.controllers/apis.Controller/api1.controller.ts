@@ -12,7 +12,7 @@ export class API1Convert implements converterController {
 
     constructor() {
         //seteamos la lista de APIS
-        const { APIs } = require('../config/list.api.json');
+        const { APIs } : any = require('../config/list.api.json');
         this.API_List = APIs;
         //seteamos el index del API
         this.API_Index = 0;

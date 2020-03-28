@@ -6,7 +6,8 @@ exports.jsonUtils = {
         "Se hizo la conversion de forma correcta",
         "Se presento un error en la peticio HTTP",
         "La respuesta de la API no fue la esperada (json), revise la consola",
-        "API no seteada, puede que no exista" //cod 4
+        "API no seteada, puede que no exista",
+        "No hay APIs disponibles" //cod5
     ],
     creaResp: (flag, codMsg, data) => {
         return {

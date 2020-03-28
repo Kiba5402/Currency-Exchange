@@ -1,10 +1,10 @@
 import { converterController } from '../../interfaces/converter.interface';
-import { API1Convert } from './api.controllers/api1.controller';
-import { API2Convert } from './api.controllers/api2.controller';
-import { API3Convert } from './api.controllers/api3.controller';
+import { API1Convert } from './apis.Controller/api1.controller';
+import { API2Convert } from './apis.Controller/api2.controller';
+import { API3Convert } from './apis.Controller/api3.controller';
 import { jsonUtils } from '../../lib/helpers/jsonFormater';
 import { Request, Response } from 'express';
- 
+
 class convertControllerG {
 
     //funcion que devuelve un listado con todas las monedas disponibles
@@ -34,6 +34,27 @@ class convertControllerG {
         } else {
             let respJson: any = jsonUtils.creaResp(false, 4, undefined);
             res.json(respJson)
+        }
+    }
+
+    //funcion que nos trae un listado de las API disponibles
+    public getAPIList(): any {
+        const { APIs }: any = require('./config/list.api.json');
+        let lista: any[] = [];
+        let num: number;
+        //consultamos la lista
+        for (let api in APIs) {
+            if (APIs[api].Activo) {
+                lista.push({
+                    "nombre": APIs[api].name,
+                });
+            }
+        }
+        //enviamos la respuesta
+        if (lista.length !== 0) {
+            return jsonUtils.creaResp(true, 0, lista);
+        } else {
+            return jsonUtils.creaResp(true, 5, undefined);
         }
     }
 

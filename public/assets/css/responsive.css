@@ -1,0 +1,387 @@
+@media(max-width: 1440px) {
+    .load {
+        margin: 0.1em 0em 0em 0.5em;
+    }
+    .labelC {
+        width: 4.5em;
+        margin-right: 0em;
+        font-size: 1.1em;
+    }
+    .selectC {
+        font-size: 1.02em;
+        width: 13.2em;
+        height: 1.7em;
+    }
+    .inputC {
+        font-size: 1.2em;
+        width: 10.5em;
+        height: 1.1em;
+    }
+    .resultados {
+        height: 32em;
+    }
+    .controles {
+        height: 32em;
+    }
+    .resultado span {
+        font-size: 3.8em;
+    }
+    .espacio {
+        margin-top: 2.8em;
+    }
+    .resultado {
+        height: 38vh;
+        display: flex;
+    }
+    article {
+        height: 75vh;
+    }
+}
+
+@media(max-width: 880px) {
+    .labelC {
+        width: 5em;
+        margin-right: 0em;
+        font-size: 1em;
+    }
+    .resultados {
+        height: 30em;
+        width: 50%;
+        margin-right: 2%;
+    }
+    .controles {
+        height: 30em;
+        width: 48%;
+    }
+    .resultado span {
+        font-size: 2.8em;
+    }
+    .espacio {
+        margin-top: 2.2em;
+    }
+    .resultado {
+        height: 38vh;
+        display: flex;
+    }
+    article {
+        height: 75vh;
+    }
+}
+
+@media(max-width: 768px) {
+    .load {
+        width: 1em;
+        position: absolute;
+        margin: 0.3em 0em 0em 0em;
+    }
+}
+
+@media(max-width: 730px) {
+    .load {
+        width: 1.4em;
+        position: absolute;
+        margin: 0.12em 0em 0em 0.3em;
+    }
+    .logo span {
+        font-size: 2em;
+        float: left;
+        display: block;
+        margin: 0.4em 0em 0em 0.1em;
+    }
+    .menu ul li {
+        margin: 0em 1em 0em 0em;
+        font-size: 1em;
+    }
+    .selectC {
+        font-size: 1.02em;
+        width: 10.2em;
+        height: 1.7em;
+    }
+    .inputC {
+        font-size: 1.2em;
+        width: 8.1em;
+        height: 1.1em;
+    }
+    .labelC {
+        width: 5em;
+        margin-right: 0em;
+        font-size: 1em;
+    }
+    .resultados {
+        height: 30em;
+        width: 50%;
+        margin-right: 2%;
+    }
+    .controles {
+        height: 30em;
+        width: 48%;
+    }
+    .resultado span {
+        font-size: 2.8em;
+    }
+    .espacio {
+        margin-top: 2.2em;
+    }
+    .resultado {
+        height: 38vh;
+        display: flex;
+    }
+    article {
+        height: 75vh;
+    }
+}
+
+@media(max-width: 680px) {
+    header {
+        height: 5.4em;
+    }
+    .logo {
+        width: 60%;
+    }
+    .logo img {
+        width: 3em;
+    }
+    .logo span {
+        font-size: 1.2em;
+        margin: 0.5em 0em 0em 0.2em;
+    }
+    .resultados {
+        height: 15em;
+        width: 100%;
+    }
+    .resultado {
+        height: 7vh;
+    }
+    .controles {
+        height: 28em;
+        width: 100%;
+        margin-top: 1em;
+    }
+    article {
+        height: 100vh;
+    }
+    .menu {
+        display: none;
+    }
+    .menu2 {
+        display: block;
+    }
+    .drop {
+        display: none;
+        position: absolute;
+        width: 9em;
+        margin: 0em 0em 0em 26.1em;
+        height: 4em;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px #336699 solid;
+    }
+    .drop div {
+        font-size: 1.07em;
+        text-align: center;
+        height: 1.8em;
+        vertical-align: middle;
+        line-height: 29px;
+    }
+    .drop div:hover {
+        color: #336699;
+    }
+    .menu2 img {
+        width: 1.3em;
+        margin: 2.15em 0em 0em 10em;
+    }
+    .dropHR {
+        margin: 0 auto;
+        width: 80%;
+        border: 0.5px #336699 solid;
+    }
+}
+
+@media(max-width: 615px) {
+    header {
+        height: 5.4em;
+    }
+    .logo {
+        width: 60%;
+    }
+    .logo img {
+        width: 3em;
+    }
+    .logo span {
+        font-size: 1.2em;
+        margin: 0.5em 0em 0em 0.2em;
+    }
+    .resultados {
+        height: 15em;
+        width: 100%;
+    }
+    .resultado {
+        height: 7vh;
+    }
+    .controles {
+        height: 28em;
+        width: 100%;
+        margin-top: 1em;
+    }
+    article {
+        height: 100vh;
+    }
+    .menu {
+        display: none;
+    }
+    .menu2 {
+        display: block;
+    }
+    .drop {
+        display: none;
+        position: absolute;
+        width: 9em;
+        margin: 0em 0em 0em 22.4em;
+        height: 4em;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px #336699 solid;
+    }
+    .drop div {
+        font-size: 1.07em;
+        text-align: center;
+        height: 1.8em;
+        vertical-align: middle;
+        line-height: 29px;
+    }
+    .drop div:hover {
+        color: #336699;
+    }
+    .menu2 img {
+        width: 1.3em;
+        margin: 2.15em 0em 0em 10em;
+    }
+    .dropHR {
+        margin: 0 auto;
+        width: 80%;
+        border: 0.5px #336699 solid;
+    }
+}
+
+@media(max-width: 550px) {
+    .article {
+        height: 75vh;
+    }
+    .logo {
+        width: 60%;
+    }
+    .logo img {
+        width: 3em;
+    }
+    .logo span {
+        font-size: 1em;
+        margin: 0.8em 0em 0em 0.2em;
+    }
+    .menu {
+        display: none;
+    }
+    .menu2 {
+        display: block;
+    }
+    .drop {
+        display: none;
+        position: absolute;
+        width: 9em;
+        margin: 0em 0em 0em 13em;
+        height: 4em;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px #336699 solid;
+    }
+    .drop div {
+        font-size: 1.07em;
+        text-align: center;
+        height: 1.8em;
+        vertical-align: middle;
+        line-height: 29px;
+    }
+    .drop div:hover {
+        color: #336699;
+    }
+    .menu2 img {
+        width: 1.3em;
+        margin: 2.1em 0em 0em 7em;
+    }
+    .dropHR {
+        margin: 0 auto;
+        width: 80%;
+        border: 0.5px #336699 solid;
+    }
+}
+
+@media(max-width: 320px) {
+    .load {
+        width: 0.7em;
+        position: absolute;
+        margin: 0.5em 0em 0em 0em;
+    }
+    header {
+        height: 4.8em;
+    }
+    .logo {
+        width: 60%;
+    }
+    .logo img {
+        width: 2.5em;
+    }
+    .logo span {
+        font-size: 0.8em;
+        margin: 0.8em 0em 0em 0.3em;
+    }
+    .selectC {
+        font-size: 1em;
+        width: 11em;
+        height: 1.7em;
+    }
+    .inputC {
+        font-size: 1.2em;
+        width: 8.5em;
+        height: 1.1em;
+    }
+    .menu {
+        display: none;
+    }
+    .menu2 {
+        display: block;
+    }
+    .drop {
+        display: none;
+        position: absolute;
+        width: 9em;
+        margin: 0em 0em 0em 8em;
+        height: 4em;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px #336699 solid;
+    }
+    .drop div {
+        font-size: 1.07em;
+        text-align: center;
+        height: 1.8em;
+        vertical-align: middle;
+        line-height: 29px;
+    }
+    .drop div:hover {
+        color: #336699;
+    }
+    .menu2 img {
+        width: 1.3em;
+        margin: 1.8em 0em 0em 5em;
+    }
+    .dropHR {
+        margin: 0 auto;
+        width: 80%;
+        border: 0.5px #336699 solid;
+    }
+    .resultado {
+        font-size: 0.7em;
+    }
+    .espacio {
+        margin-top: 1.8em;
+    }
+}

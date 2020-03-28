@@ -1,0 +1,50 @@
+<div class="center contenido">
+    <% var APIsL = (listaAPIs.data.length > 0) ? "" : "disabled"%>
+    <div class="resultados">
+        <div class="title">Conversion</div>
+        <div class="resultado">
+            <span>--</span>
+        </div>
+        <div class="actualizacion">
+            <span>Ultima actualizacion
+                <span id="timeAct">--</span>
+            </span>
+        </div>
+    </div>
+    <div class="controles">
+        <div class="title">Monedas Disponibles</div>
+        <div class="controlesContent">
+            <div class="grupo">
+                <label for="API" class="labelC">Servidor</label>
+                <select name="servicio" id="API" class="selectC" <%= APIsL  %>>
+                    <option value="-1">Seleccione un servidor</option>
+                    <% for(let api in listaAPIs.data) {%>
+                    <option value="-1"><%= listaAPIs.data[api].nombre %></option>
+                    <% }%>
+                </select>
+                <img src="./assets/images/load.gif" alt="" class="load">
+            </div>
+            <hr class="hr">
+            <div class="grupo espacio">
+                <label for="De" class="labelC">Base</label>
+                <select name="De" id="API" class="selectC" disabled>
+                    <option value="-1">Seleccione una divisa</option>
+                </select>
+            </div>
+            <div class="grupo espacio">
+                <label for="De" class="labelC">Cambio a</label>
+                <select name="De" id="API" class="selectC" disabled>
+                    <option value="-1">Seleccione una divisa</option>
+                </select>
+            </div>
+            <div class="grupo espacio">
+                <label for="De" class="labelC">Cantidad</label>
+                <input type="text" class="inputC" placeholder="0" disabled>
+            </div>
+            <div class="grupo espacio">
+                <button class="btn disabled">Convertir</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

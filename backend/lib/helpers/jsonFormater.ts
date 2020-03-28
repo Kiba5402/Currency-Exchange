@@ -4,7 +4,10 @@ export const jsonUtils = {
         "Se hizo la conversion de forma correcta", //cod 1
         "Se presento un error en la peticio HTTP", //cod 2
         "La respuesta de la API no fue la esperada (json), revise la consola", //cod 3
-        "API no seteada, puede que no exista" //cod 4
+        "API no seteada, puede que no exista", //cod 4
+        "No hay APIs disponibles", //cod5
+        "Envio de vista correcta", //cod6
+        "No se encontro la vista" //cod7
     ],
     creaResp: (flag: boolean, codMsg: number, data: any) => {
         return {
