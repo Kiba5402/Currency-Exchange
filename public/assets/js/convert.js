@@ -141,7 +141,6 @@ function renderCurrencys(info) {
             selectB.appendChild(option);
             selectCa.appendChild(option2);
             addDivisas();
-            sum++;
         }
         selectB.removeAttribute('disabled');
         selectCa.removeAttribute('disabled');
