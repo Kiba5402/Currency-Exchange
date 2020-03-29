@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "full": "tsc && node ./build/src",
-    "start": "tsc && node ./build/src",
+    "start": "node ./build/src",
     "dev": "nodemon"
   },
   "author": "Cristhian Reyes",
