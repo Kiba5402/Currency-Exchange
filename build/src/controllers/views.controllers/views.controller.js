@@ -19,7 +19,10 @@ class viewsController {
                 res.json(jsonFormater_1.jsonUtils.creaResp(false, 7, undefined));
             }
             else {
-                res.json(jsonFormater_1.jsonUtils.creaResp(true, 6, html));
+                res.json(jsonFormater_1.jsonUtils.creaResp(true, 6, {
+                    'html': html,
+                    'scripts': ['/assets/js/convert.js']
+                }));
             }
         });
     }
@@ -31,7 +34,10 @@ class viewsController {
                 res.json(jsonFormater_1.jsonUtils.creaResp(false, 7, undefined));
             }
             else {
-                res.json(jsonFormater_1.jsonUtils.creaResp(true, 6, html));
+                res.json(jsonFormater_1.jsonUtils.creaResp(true, 6, {
+                    'html': html,
+                    'scripts': []
+                }));
             }
         });
     }

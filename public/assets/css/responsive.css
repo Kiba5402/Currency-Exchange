@@ -9,12 +9,12 @@
     }
     .selectC {
         font-size: 1.02em;
-        width: 13.2em;
+        width: 19.2em;
         height: 1.7em;
     }
     .inputC {
         font-size: 1.2em;
-        width: 10.5em;
+        width: 15.6em;
         height: 1.1em;
     }
     .resultados {
@@ -30,15 +30,33 @@
         margin-top: 2.8em;
     }
     .resultado {
-        height: 38vh;
-        display: flex;
+        height: 33vh;
     }
     article {
-        height: 75vh;
+        height: 78vh;
+    }
+}
+
+@media(max-width: 1024px) {
+    .selectC {
+        font-size: 1.02em;
+        width: 14.2em;
+        height: 1.7em;
+    }
+    .inputC {
+        font-size: 1.2em;
+        width: 11.4em;
+        height: 1.1em;
+    }
+    article {
+        height: 78.7vh;
     }
 }
 
 @media(max-width: 880px) {
+    .labelRes {
+        font-size: 1em;
+    }
     .labelC {
         width: 5em;
         margin-right: 0em;
@@ -54,29 +72,52 @@
         width: 48%;
     }
     .resultado span {
-        font-size: 2.8em;
+        font-size: 2.3em;
     }
     .espacio {
         margin-top: 2.2em;
     }
     .resultado {
-        height: 38vh;
-        display: flex;
+        height: 29vh;
     }
     article {
-        height: 75vh;
+        height: 78.4vh;
     }
 }
 
 @media(max-width: 768px) {
+    article {
+        height: 78.4vh;
+    }
+    .selectC {
+        width: 13em;
+    }
+    .inputC {
+        width: 10.4em;
+    }
     .load {
         width: 1em;
         position: absolute;
         margin: 0.3em 0em 0em 0em;
     }
+    .resultado span {
+        font-size: 1.9em;
+    }
+    .labelRes {
+        font-size: 1em;
+    }
+    .actualizacion span {
+        font-size: 0.8em;
+    }
 }
 
 @media(max-width: 730px) {
+    article {
+        height: 79.5vh;
+    }
+    .actualizacion span {
+        font-size: 0.8em;
+    }
     .load {
         width: 1.4em;
         position: absolute;
@@ -117,14 +158,13 @@
         width: 48%;
     }
     .resultado span {
-        font-size: 2.8em;
+        font-size: 1.7em;
     }
     .espacio {
         margin-top: 2.2em;
     }
     .resultado {
-        height: 38vh;
-        display: flex;
+        height: 30vh;
     }
     article {
         height: 75vh;
@@ -146,11 +186,22 @@
         margin: 0.5em 0em 0em 0.2em;
     }
     .resultados {
-        height: 15em;
+        height: 18em;
         width: 100%;
     }
     .resultado {
+        height: 6.8vh;
+        padding-top: 1em;
+    }
+    .resultado span {
+        font-size: 3.2em;
+    }
+    .labelRes {
         height: 7vh;
+        font-size: 1em;
+    }
+    .title {
+        margin-bottom: 0.4em;
     }
     .controles {
         height: 28em;
@@ -158,7 +209,7 @@
         margin-top: 1em;
     }
     article {
-        height: 100vh;
+        height: 88vh;
     }
     .menu {
         display: none;
@@ -195,6 +246,15 @@
         width: 80%;
         border: 0.5px #336699 solid;
     }
+    .selectC {
+        width: 21.2em;
+    }
+    .labelC {
+        width: 6em;
+    }
+    .inputC {
+        width: 17.4em;
+    }
 }
 
 @media(max-width: 615px) {
@@ -216,7 +276,13 @@
         width: 100%;
     }
     .resultado {
-        height: 7vh;
+        height: 4vh;
+    }
+    .labelRes {
+        height: 4vh;
+    }
+    .title {
+        margin-bottom: 0.4em;
     }
     .controles {
         height: 28em;
@@ -224,7 +290,7 @@
         margin-top: 1em;
     }
     article {
-        height: 100vh;
+        height: 83vh;
     }
     .menu {
         display: none;
@@ -312,9 +378,120 @@
         width: 80%;
         border: 0.5px #336699 solid;
     }
+    .resultado span {
+        font-size: 2.7em;
+    }
+}
+
+@media(max-width: 425px) {
+    .resultado span {
+        font-size: 2.1em;
+    }
+    .labelRes span {
+        margin: auto;
+        font-size: 0.8em;
+    }
+    .selectC {
+        width: 13.2em;
+    }
+    .labelC {
+        width: 5em;
+    }
+    .inputC {
+        width: 10.5em;
+    }
+    article {
+        height: 90vh;
+    }
+}
+
+@media (width: 414px) and (height: 736px) {
+    article {
+        height: 99vh;
+    }
+}
+
+
+@media(max-width: 411px) {
+    article {
+        height: 100vh;
+    }
+}
+
+@media (width: 411px) and (height: 827px) {
+    article {
+        height: 91vh;
+    }
+}
+
+@media (width: 411px) and (height: 823px) {
+    article {
+        height: 91vh;
+    }
+}
+
+@media (width: 411px) and (height: 903px) {
+    article {
+        height: 83vh;
+    }
+}
+
+@media(max-width: 375px) {
+    article {
+        height: 89vh;
+    }
+    .resultado span {
+        font-size: 1.8em;
+    }
+    .labelRes span {
+        margin: auto;
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 375px) and (height: 667px){
+    article {
+        height: 111vh;
+    }
+    .resultado span {
+        font-size: 1.8em;
+    }
+    .labelRes span {
+        margin: auto;
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 360px){
+    article {
+        height: 117vh;
+    }
+    .menu2 img {
+        width: 1.3em;
+        margin: 2.1em 0em 0em 6em;
+    }
+    .drop {
+        margin: 0em 0em 0em 11em;
+    }
+}
+
+@media(max-width: 360px) and (height: 903px){
+    article {
+        height: 83vh;
+    }
+    .menu2 img {
+        width: 1.3em;
+        margin: 2.1em 0em 0em 6em;
+    }
+    .drop {
+        margin: 0em 0em 0em 11em;
+    }
 }
 
 @media(max-width: 320px) {
+    .resultado span {
+        font-size: 1.6em;
+    }
     .load {
         width: 0.7em;
         position: absolute;
@@ -379,9 +556,27 @@
         border: 0.5px #336699 solid;
     }
     .resultado {
-        font-size: 0.7em;
+        height: 9.5vh;
+    }
+    .labelRes {
+        height: 2vh;
+    }
+    .title {
+        margin-bottom: 0.4em;
     }
     .espacio {
         margin-top: 1.8em;
+    }
+    .actualizacion {
+        margin-top: 2em;
+    }
+    article {
+        height: 128vh;
+    }
+}
+
+@media(max-width: 320px) and (height: 903px){
+    article {
+        height: 81vh;
     }
 }

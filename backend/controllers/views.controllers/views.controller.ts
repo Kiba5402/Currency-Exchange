@@ -18,7 +18,10 @@ class viewsController {
                 console.log("Error =>", err);
                 res.json(jsonUtils.creaResp(false, 7, undefined));
             } else {
-                res.json(jsonUtils.creaResp(true, 6, html));
+                res.json(jsonUtils.creaResp(true, 6, {
+                    'html': html,
+                    'scripts': ['/assets/js/convert.js']
+                }));
             }
         });
     }
@@ -30,7 +33,10 @@ class viewsController {
                 console.log("Error =>", err);
                 res.json(jsonUtils.creaResp(false, 7, undefined));
             } else {
-                res.json(jsonUtils.creaResp(true, 6, html));
+                res.json(jsonUtils.creaResp(true, 6, {
+                    'html': html,
+                    'scripts': []
+                }));
             }
         });
     }

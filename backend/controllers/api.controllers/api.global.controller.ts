@@ -46,7 +46,8 @@ class convertControllerG {
         for (let api in APIs) {
             if (APIs[api].Activo) {
                 lista.push({
-                    "nombre": APIs[api].name,
+                    "id": APIs[api].id, 
+                    "nombre": APIs[api].name
                 });
             }
         }

@@ -2,8 +2,11 @@
     <% var APIsL = (listaAPIs.data.length > 0) ? "" : "disabled"%>
     <div class="resultados">
         <div class="title">Conversion</div>
+        <div class="labelRes">
+            <span id="labelRes">--</span>
+        </div>
         <div class="resultado">
-            <span>--</span>
+            <span id="resultado">--</span>
         </div>
         <div class="actualizacion">
             <span>Ultima actualizacion
@@ -18,31 +21,34 @@
                 <label for="API" class="labelC">Servidor</label>
                 <select name="servicio" id="API" class="selectC" <%= APIsL  %>>
                     <option value="-1">Seleccione un servidor</option>
-                    <% for(let api in listaAPIs.data) {%>
-                    <option value="-1"><%= listaAPIs.data[api].nombre %></option>
+                    <% for(let api in listaAPIs.data) {
+                        let id = listaAPIs.data[api].id;
+                        let nombre = listaAPIs.data[api].nombre;
+                    %>
+                    <option value="<%= id %>"><%= nombre %></option>
                     <% }%>
                 </select>
-                <img src="./assets/images/load.gif" alt="" class="load">
+                <img src="./assets/images/load.gif" id="loadGif" class="load">
             </div>
             <hr class="hr">
             <div class="grupo espacio">
                 <label for="De" class="labelC">Base</label>
-                <select name="De" id="API" class="selectC" disabled>
+                <select name="De" id="baseOption" class="selectC divisa" disabled>
                     <option value="-1">Seleccione una divisa</option>
                 </select>
             </div>
             <div class="grupo espacio">
                 <label for="De" class="labelC">Cambio a</label>
-                <select name="De" id="API" class="selectC" disabled>
+                <select name="De" id="destinoOption" class="selectC divisa" disabled>
                     <option value="-1">Seleccione una divisa</option>
                 </select>
             </div>
             <div class="grupo espacio">
                 <label for="De" class="labelC">Cantidad</label>
-                <input type="text" class="inputC" placeholder="0" disabled>
+                <input onkeydown="return onlyNumber(event)" type="text" class="inputC" placeholder="0" id="cantidadInput" >
             </div>
             <div class="grupo espacio">
-                <button class="btn disabled">Convertir</button>
+                <button class="btn disabled" id="btnConvertir">Convertir</button>
             </div>
         </div>
     </div>

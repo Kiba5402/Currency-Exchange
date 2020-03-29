@@ -88,7 +88,7 @@ article {
 }
 
 footer {
-    height: 2.7em;
+    height: 4.7vh;
     background-color: #f7f7f7;
     text-align: center;
     line-height: 2.5em;
@@ -193,8 +193,17 @@ footer p {
     background-color: #004080;
 }
 
+.labelRes {
+    display: flex;
+}
+
+.labelRes span {
+    margin: auto;
+    font-size: 1.5em;
+}
+
 .resultado {
-    height: 48vh;
+    height: 44vh;
     display: flex;
 }
 
