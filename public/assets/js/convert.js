@@ -78,7 +78,6 @@ function getConvert() {
     ajax.onreadystatechange = () => {
         if (ajax.status == 200 && ajax.readyState == 4) {
             load.style.display = 'none';
-            console.log(ajax.responseText);
             renderConvert(ajax.responseText);
             btn.classList.remove('disabled');
             btn.addEventListener('click', getConvert);
@@ -132,7 +131,6 @@ function renderCurrencys(info) {
     let selectB = document.getElementById('baseOption');
     let selectCa = document.getElementById('destinoOption');
     if (infoAux.flag) {
-        let sum = 0;
         for (let i in infoAux.data) {
             let option = document.createElement('option');
             let name = infoAux.data[i].name;
@@ -147,7 +145,6 @@ function renderCurrencys(info) {
         }
         selectB.removeAttribute('disabled');
         selectCa.removeAttribute('disabled');
-        console.log(sum);
     }
 }
 

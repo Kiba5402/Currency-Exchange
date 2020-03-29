@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function setMeta() {
     let meta = document.querySelector("#viewPortMeta");
     meta.content += `,height=${window.innerHeight}`;
-    console.log(meta);
 }
 
 //funcion que muestra el menu desplegable en dispositivos moviles
