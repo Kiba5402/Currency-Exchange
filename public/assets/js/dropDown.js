@@ -118,7 +118,9 @@ function renderView(info) {
 //funcion que nos ayuda a insertar los scripts de las vistas que llegan
 function cargaScritps(scrtipts) {
     for (let i in scrtipts) {
-        document.getElementById(scrtipts[i])?.remove();
+        if (document.getElementById(scrtipts[i]) !== null) {
+            document.getElementById(scrtipts[i]).remove();
+        }
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         script.type = 'text/javascript';
