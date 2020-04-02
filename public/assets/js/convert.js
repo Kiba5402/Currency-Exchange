@@ -48,9 +48,11 @@ function comVal(event) {
 
 //funcion escucha del input de cantidad
 function onlyNumber(event) {
+    console.log(event);
     let regex = /[^0-9]/g;
     let match = event.key.match(regex);
-    if (match !== null) {
+    console.log(match);
+    if (match !== null && (event.keyCode !== 37 && event.keyCode !== 39  && event.keyCode !== 8)) {
         return false;
     }
     return true;
