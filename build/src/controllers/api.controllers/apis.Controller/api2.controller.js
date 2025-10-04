@@ -81,6 +81,7 @@ class API2Convert {
     //funcion que envia la peticion a la API
     connectAPI(url, query) {
         return new Promise((resolve, reject) => {
+            console.log('Consultando API =>', url + query);
             //creamos la peticion http
             https_1.default.get(url + query, resp => {
                 let data = '';

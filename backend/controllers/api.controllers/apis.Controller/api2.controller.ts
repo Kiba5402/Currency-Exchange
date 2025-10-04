@@ -71,6 +71,7 @@ export class API2Convert implements converterController {
     //funcion que envia la peticion a la API
     connectAPI(url: string, query: string): Promise<any> {
         return new Promise((resolve, reject) => {
+            console.log('Consultando API =>', url + query);
             //creamos la peticion http
             https.get(url + query, resp => {
                 let data = '';

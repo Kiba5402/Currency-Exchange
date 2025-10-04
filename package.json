@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
+    "build:cloud": "tsc && node ./build/src/index.js",
     "full": "tsc && node ./build/src",
     "start": "node ./build/src",
     "dev": "nodemon"

@@ -11,9 +11,9 @@
         {
             "id": 2,
             "name": "ExchangeRate",
-            "urlBase": "https://prime.exchangerate-api.com/v5/",
+            "urlBase": "https://v6.exchangerate-api.com/v6/",
             "docs": "https://www.exchangerate-api.com/docs/overview",
-            "key": "708d8f6db9d09ea5ea7e5e19",
+            "key": "e25d9746d9e31c80b4866664",
             "Activo": true
         },
         {
@@ -22,7 +22,7 @@
             "urlBase": "https://free.currconv.com/api/v8/",
             "docs": "https://www.currencyconverterapi.com/docs",
             "key": "106cf3cf948c7917023b",
-            "Activo": true
+            "Activo": false
         }
     ]
 }

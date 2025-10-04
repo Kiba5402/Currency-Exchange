@@ -67,6 +67,7 @@ function getConvert() {
     let qty = document.querySelector('#cantidadInput').value;
     let api = document.querySelector('#API').value;
     let URL = `${protocol}//${url}/convert/${api}/${b}/${t}/${qty}`;
+    console.log('->',URL);
     let load = document.getElementById('loadGif');
 
     ajax.open('POST', URL, true);
